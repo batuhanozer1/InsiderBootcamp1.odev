@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,1,0" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Fırıldak Ailesi Tanıtım Sayfası</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Site logosu" class="logo-img">
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+            <label for="menu-toggle" class="menu-toggle"> 
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul class="navbar">
+                <li class="nav-item"><a href="#content-wrapper">Anasayfa</a></li>
+                <li class="nav-item"><a href="#characters-section">Karakterler</a></li>
+                <li class="nav-item"><a href="#favorite-scene-section">Favori Sahne</a></li>
+                <li class="nav-item"><a href="#episodes-section">Bölümler</a></li>
+            </ul>
+            <div class="profile-icon">
+                <span  class="material-symbols-rounded">account_circle</span>
+            </div>
+        </div>
+    </nav>
+
+    <div  id="content-wrapper" class="container">
+        <div  class="content-wrapper">
+            <div class="title-wrapper">
+                <h1><a class="baslik-link " href="https://www.imdb.com/title/tt6512362/?ref_=tt_mv_close" target="_blank">Fırıldak Ailesi</a></h1>
+                <button class="favorite-btn " onclick="degistir()">
+                    <span class="material-symbols-rounded">favorite</span>
+                    Favorilere Ekle
+                </button>
+            </div>
+            <div class="series-description">
+                <p>Fırıldak Ailesi, Türk televizyonlarında yayınlanan, eğlenceli ve komik bir animasyon dizisidir. Dizi, Fırıldak ailesinin günlük yaşamında karşılaştıkları ilginç ve absürd olayları konu alır. Ailenin her bireyi, sıradışı karakter özellikleriyle dikkat çeker ve birbirinden komik durumlarla izleyiciyi güldürmeyi amaçlar.</p>
+                <div class="series-poster">
+                    <img src="images/firildak_ailesi_afis.jpg" alt="Fırıldak Ailesi Afişi" class="poster-img"/>
+                </div>
+            </div>
+        </div>
+
+        <div id="characters-section" class="characters-section">
+            <h2>Karakterler</h2>
+            <div class="character-cards">
+                <div class="character-card">
+                    <img src="images/sabri.png" alt="Sabri Fırıldak" class="character-img">
+                    <h3>Sabri Fırıldak (Baba)</h3>
+                    <p>Ailenin babası olan Sabri, sürekli belaya bulaşan ve maceracı bir kişiliğe sahiptir. Çoğu zaman ailesini zor durumda bıraksa da, iyi niyetlidir ve onları korumak ister.</p>
+                </div>
+                <div class="character-card">
+                    <img src="images/anne.jpg" alt="Yıldız Fırıldak" class="character-img">
+                    <h3>Yıldız Fırıldak (Anne)</h3>
+                    <p>Ailenin annesi Yıldız, denge unsuru olarak ailenin düzenini sağlamaya çalışır. Sabri'nin aksine daha temkinli ve mantıklıdır.</p>
+                </div>
+                <div class="character-card">
+                    <img src="images/zeki.png" alt="Zeki Fırıldak" class="character-img">
+                    <h3>Zeki Fırıldak (Büyük Oğul)</h3>
+                    <p>Ailenin büyük oğlu Zeki, haylaz ve enerjik bir karakterdir. Sürekli yeni fikirler ve planlar üretir, ancak bunlar çoğu zaman ters gider.</p>
+                </div>
+                <div class="character-card">
+                    <img src="images/afet.jpg" alt="Yıldız Fırıldak" class="character-img">
+                    <h3>Afet Fırıldak (Küçük Kız)</h3>
+                    <p>Ailenin küçük kızı Afet, hayalperest ve duygusal bir yapıya sahiptir. Aile üyelerinin aksine daha sakin ve düşüncelidir.</p>
+                </div>
+                <div class="character-card">
+                    <img src="images/copcu.jpg" alt="Sabri Fırıldak" class="character-img">
+                    <h3>Fakir Orhan</h3>
+                    <p>Hayri, çöplerin arasında yaşayan bilge bir adamdır. 
+                        Her ne kadar hurda toplasa da hayata dair ilginç ve derin düşünceleri vardır. 
+                        Zaman zaman Sabri ve diğer mahalle sakinlerine beklenmedik felsefi öğütler vererek onları şaşırtır.
+    
+                    </p>
+                </div>
+                <div class="character-card">
+                    <img src="images/kedi.jpg" alt="Yıldız Fırıldak" class="character-img">
+                    <h3>Kedi: Fırıl</h3>
+                    <p>Fırıl, Fırıldak Ailesi’nin evcil kedisidir. Sessiz ve masum görünse de başına gelen talihsiz olaylarla ve verdiği umursamaz tepkilerle izleyiciyi güldürür. Sabri ile sürekli çatışma halindedir ve zaman zaman evin içinde küçük kaoslar yaratır.   </p>
+                </div>
+    
+            </div>
+        </div>
+
+        <div id="favorite-scene-section" class="favorite-scene-section">
+            <h2>Favori Sahne</h2>
+            <div class="scene-content">
+                <div class="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/--PT3agrnv4?si=Y_-lyIKzJvpmMBvj" 
+                        title="Fırıldak Ailesi Favori Sahne" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="scene-description">
+                    <h3>23. Bölüm Kara İp Korsanları</h3>
+                    <p>Bu bölümde Karayip korsanlarına atıfta bulunarak denizcilik ve korsanlarla ilgili eğlenceli bir bölüm yapmışlaz zaman zaman yetişkinlerin anlayabileceği bel altı espirilerle ve soğuk şakalarla güldürüyorlar. </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="episodes-section" class="episodes-section">
+            <h2>Bölümler</h2>
+            <div class="episode-cards">
+                <div class="episode-card">
+                    <div class="episode-number">1.Bölüm</div>
+                    <h3>Fırıldak Ailesi'nin Yeni Evi</h3>
+                    <p>Fırıldak ailesi yeni evlerine taşınır. Sabri'nin ev taşıma sırasındaki talihsiz olayları ve Zeki'nin yeni komşularla tanışma maceraları ile dolu bir bölüm.</p>
+                </div>
+                <div class="episode-card">
+                    <div class="episode-number">2.Bölüm</div>
+                    <h3>Fırıldak Ailesi'nin Yeni Evi</h3>
+                    <p>Fırıldak ailesi yeni evlerine taşınır. Sabri'nin ev taşıma sırasındaki talihsiz olayları ve Zeki'nin yeni komşularla tanışma maceraları ile dolu bir bölüm.</p>
+                </div>
+                <div class="episode-card">
+                    <div class="episode-number">3.Bölüm</div>
+                    <h3>Fırıldak Ailesi'nin Yeni Evi</h3>
+                    <p>Fırıldak ailesi yeni evlerine taşınır. Sabri'nin ev taşıma sırasındaki talihsiz olayları ve Zeki'nin yeni komşularla tanışma maceraları ile dolu bir bölüm.</p>
+                </div>
+                <div class="episode-card">
+                    <div class="episode-number">4.Bölüm</div>
+                    <h3>Fırıldak Ailesi'nin Yeni Evi</h3>
+                    <p>Fırıldak ailesi yeni evlerine taşınır. Sabri'nin ev taşıma sırasındaki talihsiz olayları ve Zeki'nin yeni komşularla tanışma maceraları ile dolu bir bölüm.</p>
+                </div>
+                <div class="episode-card">
+                    <div class="episode-number">5.Bölüm</div>
+                    <h3>Fırıldak Ailesi'nin Yeni Evi</h3>
+                    <p>Fırıldak ailesi yeni evlerine taşınır. Sabri'nin ev taşıma sırasındaki talihsiz olayları ve Zeki'nin yeni komşularla tanışma maceraları ile dolu bir bölüm.</p>
+                </div>
+
+            </div>
+   
+        </div>
+        
+
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <h3>Tasarımcı</h3>
+                <p>Batuhan ÖZER</p>
+                <div class="social-links">
+                    <a href="https://github.com/batuhanozer1" target="_blank" class="social-link">
+                        <span class="material-symbols-outlined"> code </span>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/batuhanzer/" target="_blank" class="social-link">
+                        <span class="material-symbols-outlined">work</span>
+                        LinkedIn
+                    </a>
+                    <a href="https://insidertestin-lul1452.slack.com/team/U08DWNPRDJL" target="_blank" class="social-link">
+                        <span class="material-symbols-outlined">groups</span>
+                        Slack
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Insider Testinium Tech Hub JavaScript Developer Bootcamp Projesidir.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
